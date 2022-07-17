@@ -29,25 +29,40 @@ An Admin/SuperUser is already created, Log-In using
 - password: admin1234
 <br>
 <img src="images/admin-login.png">
-<br>
-<imt src="images/admin-panel.png">
-<h3> Creating Users </h3>
+
+## Creating Users
 Once Logged Into the admin pannel, Create some users by going into the users tab.
 <br><br>
 <img src="images/user-panel.png">
-<br>
+<br><br>
 <img src="images/create-user.png">
 Two Users are already created, user1 and user2. User1 credentials:
 - username: user1
 - password: abcdefg12345678
-<br>
-<h3> Creating Auctions </h3>
+
+## Creating Auctions
 Similar to creating users, create auctions.
  - No need to provide <b>Winner</b> and <b>bid</b>.
 <br><br>
 <img src="images/auction-panel.png">
-<br>
 <img src="images/auction-create.png">
 An Auction is already created named Auction 1 with id=1.
 
 # APIs
+Open the PostMan Collection for the APIs. The Server should be running on 8000 port.
+## TokenPair
+This is for the JWT auth tokens - access and refresh. <br><br>
+<img src="images/token-pair.png">
+## Viewing Auctions
+Anyone can view the auctions without being authenticated. <br><br>
+<img src="images/auction-list.png">
+## Bidding
+Any authenticated user can Bid. Aucthentication is done by providing the access token in the Headers.
+- The Auction id is to be provided in the path/url. <br>
+<br>
+<img src="images/bidding.png">
+<img src="images/bidding-2.png">
+
+## Viewing Bids
+Any authenticated user can also view their bids. Aucthentication is done by providing the access token in the Headers. <br><br>
+<img src="images/user-bids.png">
