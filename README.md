@@ -68,3 +68,13 @@ Any authenticated user can Bid. Aucthentication is done by providing the access 
 ## Viewing Bids
 Any authenticated user can also view their bids. Aucthentication is done by providing the access token in the Headers. <br><br>
 <img src="images/user-bids.png">
+
+# Docker Containerization
+Install and setup Docker Desktop.
+ run on terminal
+ ```sh
+  $ docker-compose up --build -d
+ ```
+<img src="images/docker-compose.png">
+<br>
+<img src="images/docker.png">
