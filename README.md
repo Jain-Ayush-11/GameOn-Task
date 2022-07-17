@@ -28,6 +28,7 @@ Enter the details asked for.
 An Admin/SuperUser is already created, Log-In using
 - username: admin
 - password: admin1234
+<br>
 <img src="images/admin-login.png">
 <br>
 <imt src="images/admin-panel.png">
