@@ -28,10 +28,10 @@ Enter the details asked for.
 An Admin/SuperUser is already created, Log-In using
 - username: admin
 - password: admin1234
-<br>
+<!-- <br>
 <img src="images/admin-login.png">
 <br>
-<imt src="images/admin-panel.png">
+<imt src="images/admin-panel.png"> -->
 <h3> Creating Users </h3>
 Once Logged Into the admin pannel, Create some users by going into the users tab.
 <img src="images/user-panel.png">
