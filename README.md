@@ -18,7 +18,7 @@ Now inside the directory, execute
 Once the server starts, the project is running.
 <br>
 # Project Set-Up
-<h2>Admin Panel</h2>
+<h3> Admin Panel </h3>
 Log In to the admin pannel using admin credentials either created by executing,
  ```sh
   $ python manage.py createsuperuser
@@ -29,4 +29,17 @@ An Admin/SuperUser is already created, Log-In using
 - password: admin1234
 <img src="images/admin-login.png">
 <br>
-Once Logged Into the admin pannel Create Some Users, going into the users tab.
+<imt src="images/admin-panel.png">
+<br>
+<h5> Creating Users </h5>
+Once Logged Into the admin pannel, Create some users by going into the users tab.
+<img src="images/user-panel.png">
+<br>
+<img src="images/create-user.png">
+<br>
+<h5> Creating Auctions </h5>
+Similar to creating users, creating auctions.
+<img src="images/user-panel.png">
+<br>
+<img src="images/create-user.png">
+<br>
