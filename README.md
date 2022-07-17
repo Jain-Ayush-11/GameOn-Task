@@ -18,6 +18,7 @@ Now inside the directory, execute
 Once the server starts, the project is running.
 <br>
 # Project Set-Up
+<h2>Admin Panel</h2>
 Log In to the admin pannel using admin credentials either created by executing,
  ```sh
   $ python manage.py createsuperuser
