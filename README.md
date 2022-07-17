@@ -18,7 +18,7 @@ Now inside the directory, execute
 Once the server starts, the project is running.
 <br>
 # Project Set-Up
-<h2> Admin Panel </h2>
+<!-- Admin Panel -->
 Log In to the admin pannel using admin credentials either created by executing
  ```sh
   $ python manage.py createsuperuser
@@ -34,12 +34,19 @@ An Admin/SuperUser is already created, Log-In using
 <imt src="images/admin-panel.png">
 <h3> Creating Users </h3>
 Once Logged Into the admin pannel, Create some users by going into the users tab.
+<br><br>
 <img src="images/user-panel.png">
 <br>
 <img src="images/create-user.png">
+Two Users are already created, user1 and user2. User1 credentials:
+- username: user1
+- password: abcdefg12345678
+<br>
 <h3> Creating Auctions </h3>
-Similar to creating users, creating auctions.
-<img src="images/user-panel.png">
+Similar to creating users, create auctions.
+ - No need to provide <b>Winner</b> and <b>bid</b>.
+<br><br>
+<img src="images/auction-panel.png">
 <br>
-<img src="images/create-user.png">
-<br>
+<img src="images/auction-create.png">
+An Auction is already created named Auction 1 with id=1.
