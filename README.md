@@ -26,4 +26,6 @@ Enter the details asked for.
 An Admin/SuperUser is already created, Log-In using
 - username: admin
 - password: admin1234
+<img src="images/admin-login.png">
+<br>
 Once Logged Into the admin pannel Create Some Users, going into the users tab.
