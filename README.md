@@ -54,7 +54,9 @@ Open the PostMan Collection for the APIs. The Server should be running on 8000 p
 This is for the JWT auth tokens - access and refresh. <br><br>
 <img src="images/token-pair.png">
 ## Viewing Auctions
-Anyone can view the auctions without being authenticated. <br><br>
+Anyone can view the auctions without being authenticated.
+The Winners of a auction are only visible once the auction has ended.
+Before that, variables of bid and winner are not send in the response.<br><br>
 <img src="images/auction-list.png">
 ## Bidding
 Any authenticated user can Bid. Aucthentication is done by providing the access token in the Headers.
