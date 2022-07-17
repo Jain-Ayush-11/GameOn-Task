@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "25aae6c8-f967-45b5-b0d6-8b004a7ab0c7",
+		"name": "Auction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18099512"
+	},
+	"item": [
+		{
+			"name": "TokenPair",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "user2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "#Ayushjain11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{localhost}}/token/",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bidding",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4MTE5NDg2LCJpYXQiOjE2NTgwNTk0ODYsImp0aSI6ImMxY2JlNmFjMWYxNzQzYTliNjdlY2RkZDczMTBiMjFkIiwidXNlcl9pZCI6M30.rxFfjMFVE5UAA0Z0zNIPEMr2Azo4DEQCPn22fCTfCus",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":6000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/bid/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bid",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuctionList",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "user1",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "1233",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auction/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auction",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Userr-Bids",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4MDk5NTQ1LCJpYXQiOjE2NTgwMzk1NDUsImp0aSI6ImU4MTRhYmJjMTdhNDQyMTI5MmYzOTJmYWQ5NTMzY2RlIiwidXNlcl9pZCI6Mn0.ZdHzzcRP1KINt_ayZcoJMwypBA7MmoX-uh-pE5u6K7g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/user-bids/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user-bids",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
